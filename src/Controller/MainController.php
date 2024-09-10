@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -8,7 +10,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MainController extends AbstractController
 {
-    #[Route(path: '/', name: '')]
+    #[Route(path: '/', name: 'app_name_homepage')]
     public function homepage(): Response
     {
         $starshipCount = 457;
